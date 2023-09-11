@@ -58,7 +58,7 @@ const cargarPostres = async () => {
           })
 
 
-          document.getElementById("card-deck").innerHTML = peliculas;
+          document.getElementById("card-deck").innerHTML = postres;
 
 
 
