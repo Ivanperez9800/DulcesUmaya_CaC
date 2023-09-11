@@ -629,7 +629,7 @@ textarea {
 /*---------------------------------------------------------------------*/
 
 
-.recetas{
+/* .recetas{
   background-color: #2f2d2d;
   padding: 5px 0px;
 }
@@ -688,9 +688,9 @@ textarea {
   padding: 5px;
   font-weight: bold;
   
-}
+} */
 
-/*Estilos para tablets*/
+/*Estilos para tablets
 
 @media (min-width: 768px) and (max-width: 1024px){
   .card-deck{
@@ -704,11 +704,108 @@ textarea {
   }
 }
 
+*/
 /*Estilo para computadoras*/
 
+/*
 @media (min-width: 1024px){
   .card-deck{
     justify-content: space-evenly;
+  }
+}
+ */
+
+
+
+ .recetas{
+  background-color: #2f2d2d;
+  padding: 5px 0px;
+  
+}
+
+.card-recetas{
+  background-color: #bda177;
+}
+
+#card-deck{
+  display: flex;
+
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
+
+
+}
+
+.card-recetas{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+
+.card-body-recetas{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+
+.card-body-recetas .card-title-recetas{
+  align-self: center;
+  font-size: 1.2em;
+  color: #7e623b;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-body-recetas .card-text-recetas{
+  color: white;
+  align-self: center;
+  width: 80%;
+  margin: 5px;
+
+}
+
+.btn-recetas{
+  color: #694d25;
+  text-align: center;
+  border: 2px solid #694d25;
+  width: 50%;
+  align-self: center;
+  padding: 5px;
+  font-weight: bold;
+  
+}
+
+/*Estilos para tablets*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .card-deck{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-recetas{
+    width: 18rem;
+  }
+}
+
+/*Estilo para computadoras*/
+
+@media (min-width: 1024px){
+   #card-deck{
+    justify-content:space-evenly;
+  }
+  
+  .card-recetas{
+      width: 18rem;
   }
 }
 
